@@ -1,0 +1,20 @@
+
+  <div><ng-container *ngComponentOutlet= "say"></ng-container></div>
+  <div> <button class="btn btn-primary" (click)="sayHi()" >Registration</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="btn btn-sucess" (click)="sayHello()" >HSBC login </button> &nbsp;&nbsp;</div>
+
+
+  &nbsp;&nbsp; <div style="text-align:center">
+    
+ </div>
+ 
+ <div> Employees Joining Month:
+    <select>
+       <option *ngFor="let i of months">{{i}}</option>
+    </select>
+ </div>
+ <div>
+  <span *ngIf="isavailable; then condition1 else condition2">Condition is valid.</span>
+  <ng-template #condition1>Condition is valid</ng-template>
+  <ng-template #condition2>Condition is invalid</ng-template>
+</div>
